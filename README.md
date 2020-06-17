@@ -4,7 +4,6 @@
 ## 2.Background
 ### A.Snell's Law（苏）
 - Basic description
-- the calculation of reflect/transmitt
 - Material Index
 ### B.Fresnel's Law（梁）
 ### C.(BVH)（奶）
@@ -13,7 +12,7 @@
 - Python(object oriented programming)
 - (Embree)
 ## 3.Simulation Design
-### A.Physical Modelling（马）
+### A.Physical and Mathematical Modelling（马+苏）
 ### B. Test cases（马）
 - Hypothesis
 - Nonhypothesis
