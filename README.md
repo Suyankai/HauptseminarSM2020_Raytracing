@@ -12,7 +12,7 @@
 - Python(object oriented programming)
 - (Embree)
 ## 3.Simulation Design
-### A.Physical and Mathematical Modelling（马+苏）
+### A.Physical and Mathematical Modelling（马）
 ### B. Test cases（马）
 - Hypothesis
 - Nonhypothesis
