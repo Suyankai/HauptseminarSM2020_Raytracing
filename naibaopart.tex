@@ -68,16 +68,55 @@ component, formatting, style, styling, insert
 For papers published in translation journals, please give the English 
 citation first, followed by the original foreign-language citation \cite{b6}.
 
-\section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+\section{Background}
+\subsection{BVH}
+A bounding volume hierarchy (BVH) is a tree structure on a set of geometric objects. 
+All geometric objects are wrapped in bounding volumes that form the leaf nodes of the tree. 
+These nodes are then grouped as small sets and enclosed within larger bounding volumes. 
+These, in turn, are also grouped and enclosed within other larger bounding volumes in a recursive fashion, 
+eventually resulting in a tree structure with a single bounding volume at the top of the tree. 
+Bounding volume hierarchies are used to support several operations on sets of geometric objects efficiently, such as in collision detection and ray tracing. 
+\subsection{About the tools}
+\paragraph{Python}
+
+Python is an interpreted, high-level, general-purpose programming language. 
+Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. 
+Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.\cite{python1}
+
+Compared to C++, Python has a simpler syntax,and Python also has many extension packages. such as Numpy,it can be used to calculate vectors directly,
+Sympy can also be used to solve equations with symbol. By importing those packages, we don't need to overload the operator for vectors calculating, and we don't need to
+solve some complex equations by ourselves.
+
+In addition, Python also supports interactive shells, such as ipython, which is very friendly to beginners in programming, 
+can speed up our language learning speed, and greatly improve our debugging capabilities.
+
+\paragraph{C++}
+Although Python is very convenient for mathematical operations and friendly enough for beginners, but
+Python has cross-platform packaging problems and the performance is not good enough. 
+Therefore, projects with huge calculations such as ray tracing generally use better performance 
+and Better use of programming languages with different data structures, such as C++.
+
+\paragraph{Embree}
+Intel® Embree is a collection of high-performance ray tracing kernels, developed at Intel. 
+The target users of Intel® Embree are graphics application engineers who want to improve the 
+performance of their photo-realistic rendering application by leveraging Embree's performance-optimized ray tracing kernels. 
+The single-ray traversal kernels of Intel® Embree provide high performance for incoherent workloads and are very easy to integrate into existing rendering applications.
+Using the stream kernels, even higher performance for incoherent rays is possible, but integration might require significant code changes to the application to use the stream paradigm. 
+In general for coherent workloads, the stream mode with coherent flag set gives the best performance.
+Intel® Embree also supports dynamic scenes by implementing high-performance two-level spatial index structure construction algorithms. \cite{Intel_Embree}
+
+Embree is compiling with C++, and we can use Embree API to realise Raytracing.
+\section{Simulation Design}
+\subsection{The use of Embree}
+\section{Result}
+\subsection{The result of Embree demo}
+
+
 
 
 \bibliographystyle{./bibliography/IEEEtran}
-\bibliography{./bibliography/IEEEabrv,./bibliography/IEEEexample}
+\bibliography{./bibliography/IEEEabrv,./bibliography/IEEEexample,./bibliography/Naibao}
 
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+
 
 \end{document}
