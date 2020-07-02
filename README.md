@@ -28,3 +28,4 @@
 - Basic ones
 - Ways to improve the simulation
 - remaining issues(times of reflection, numerical problems, etc)
+### the contribution of each member of your group is stated
