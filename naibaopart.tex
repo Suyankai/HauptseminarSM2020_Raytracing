@@ -72,7 +72,7 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 
 \section{Background}
 \subsection{Triangle mesh}
-Triange mesh is a kind of polygon mesh. Polygon mesh is also called "Mesh". It is a data structure used in computer graphics to model various irregular objects. The surface of objects in the real world is intuitively composed of curved surfaces. In the computer world, however, only discrete structures can be used to simulate continuous things in reality. So the curved surface in the real world is actually composed of countless small polygon patches in the computer. For example, the model in the Fig.\ref{Triangle Mesh_sphere_surface}. 
+Triange mesh is a kind of polygon mesh. Polygon mesh is also called "Mesh"，it's a data structure used in computer graphics to model various irregular objects. In the real world,the surface of objects is intuitively composed of curved surfaces, but in the computer world, however, only discrete structures can be used to simulate continuous things in reality. So the curved surface in the real world is actually composed of countless small polygon patches in the computer. For example, the model in the Fig.\ref{Triangle Mesh_sphere_surface}. 
 \begin{figure}[ht]
     \caption{Example of Triangle Mesh}
     \label{Triangle Mesh_sphere_surface}
@@ -82,7 +82,7 @@ Triange mesh is a kind of polygon mesh. Polygon mesh is also called "Mesh". It i
 
 In fact, a large number of small triangles are used inside the computer to form such a shape. Such a collection of facets is called Mesh. Mesh can be composed of triangles or other plane shapes such as quadrilaterals, pentagons, etc.; Because of all the plane polygons can also be subdivided into triangles, it's also general to use a triangle mesh composed of triangles to represent the surface of an object.
 
-For the Triangle Mesh, most of kenrels use indices and vertex to set the data of Triangle, because for a Triange Mesh, not all the Triangle needs 3 Vertexs, because it can be connected with each ohter, so we need to set the vertex data. And a triangle whose vertices are laid out counter-clockwise has its geometry normal pointing upwards outside the front face, we use indice to contral counter-clockwise or clockwise.
+For the Triangle Mesh, most of kenrels use indices and vertex to set the data of Triangle, not all the Triangle needs 3 vertexs, because it can be connected with pther triangle, so we need to set the vertex data. And a triangle whose vertices are laid out counter-clockwise has its geometry normal pointing upwards outside the front face, we use indice to contral counter-clockwise or clockwise.
 
 \subsection{BVH}
 A bounding volume hierarchy (BVH) is a tree structure on a set of geometric objects. 
